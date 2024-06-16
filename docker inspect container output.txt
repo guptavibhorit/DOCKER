@@ -1,0 +1,292 @@
+PS D:\> docker inspect 0dd51cb324a8
+[
+    {
+        "Id": "0dd51cb324a883fd9ea3125f52f9cad9832340a178e34f66d3209ab53944a001",
+        "Created": "2024-06-16T16:36:25.084750745Z",
+        "Path": "runmqdevserver",
+        "Args": [],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 804,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2024-06-16T16:36:26.793447281Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:74a7d60fd2bf4c6439e98a7b26b7d2a84320b7de05686e5ce465be00822396e6",
+        "ResolvConfPath": "/var/lib/docker/containers/0dd51cb324a883fd9ea3125f52f9cad9832340a178e34f66d3209ab53944a001/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/0dd51cb324a883fd9ea3125f52f9cad9832340a178e34f66d3209ab53944a001/hostname",
+        "HostsPath": "/var/lib/docker/containers/0dd51cb324a883fd9ea3125f52f9cad9832340a178e34f66d3209ab53944a001/hosts",
+        "LogPath": "/var/lib/docker/containers/0dd51cb324a883fd9ea3125f52f9cad9832340a178e34f66d3209ab53944a001/0dd51cb324a883fd9ea3125f52f9cad9832340a178e34f66d3209ab53944a001-json.log",
+        "Name": "/QM1",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "qm1data:/mnt/mqm"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "bridge",
+            "PortBindings": {
+                "1414/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "1414"
+                    }
+                ],
+                "9443/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "9443"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                13,
+                156
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "host",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": false,
+            "PidsLimit": null,
+            "Ulimits": [],
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/asound",
+                "/proc/acpi",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/sys/firmware",
+                "/sys/devices/virtual/powercap"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/69a64b36135211ac0c81064614dd6766b820f45b0e87cc49d49d0f8495efaa88-init/diff:/var/lib/docker/overlay2/4f4ff837490cbfe623350de9bed6f1af70f266856f54eccef9f01c4f10f3d2d4/diff:/var/lib/docker/overlay2/6fb98522aeaa945370f79a3db4dfc944dd6bf79faf0058642e6bb2d695ba17f0/diff:/var/lib/docker/overlay2/fd612f64f93d9e0d12cf300ef33f6d588b75c7ce279067b32dc931a09ccb17de/diff:/var/lib/docker/overlay2/d244c4d8cf1ad4ba19db7b5146798905a9702cea3b336420c021ff27427a63bb/diff:/var/lib/docker/overlay2/0d3d2bc364a2d295328c6c4f3f0072ee182ce530d0de2474b0dc320a8a27dc6a/diff:/var/lib/docker/overlay2/4a40878398b261d43bede56c8b0b164fff350fb3eacd0a1470fa624229d11384/diff:/var/lib/docker/overlay2/c08405584888e071c4d248398d817b6e078d9eee832c276d2cd351f3c27175a8/diff:/var/lib/docker/overlay2/8143d5848ea73fa0e50c861c8941e5fca3939be70ba821088b1a87a129d847b0/diff:/var/lib/docker/overlay2/067d10ac47f7a24ab3019a1e1169a3db8e06d05c95efcee8b8696062207e20f4/diff:/var/lib/docker/overlay2/bd18b3a2fd83af064eaa983330ddd2aac05ac1172022a1d8db67ddbda7a195b3/diff:/var/lib/docker/overlay2/7cd11f72229f670a55a855bcdd13cf406d5e2e4a3f04b1f03ef4ffe0cc58e7cb/diff:/var/lib/docker/overlay2/ed2aa3fedb8b8b7ef1407cd417b461371e001bb88f73dc54981c18d549ae5776/diff:/var/lib/docker/overlay2/0c136dda006587fd254d4a60d82b372384bb6734ae24e7e81268c05fa1aae8b4/diff:/var/lib/docker/overlay2/dc74a3cdb8bd803d81802d3602f970495e6bc67e0a5428875ae3d1da2bb5257d/diff:/var/lib/docker/overlay2/1b5110cb3833939bbaaf917eb4bb9272eb4b2be420293a1d369e7b2f1bfb0f85/diff:/var/lib/docker/overlay2/119c89a82a9e2e090e603f5b853debcc59852212282bc17f78ae83214ecc8e05/diff:/var/lib/docker/overlay2/13c5bb6c4968bfa22b7889771b8ebff4a40c253d1076104faff56b0e53baa523/diff:/var/lib/docker/overlay2/1256bb84e58b4525d625a7333044af664ea0f1db7eb9618c2d4bcc4bfd673a5e/diff:/var/lib/docker/overlay2/37d3eb5ee360d3535a79db5910a0b3aebd64b9c9d5c07abf90620d24ad6a8dce/diff",
+                "MergedDir": "/var/lib/docker/overlay2/69a64b36135211ac0c81064614dd6766b820f45b0e87cc49d49d0f8495efaa88/merged",
+                "UpperDir": "/var/lib/docker/overlay2/69a64b36135211ac0c81064614dd6766b820f45b0e87cc49d49d0f8495efaa88/diff",
+                "WorkDir": "/var/lib/docker/overlay2/69a64b36135211ac0c81064614dd6766b820f45b0e87cc49d49d0f8495efaa88/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "qm1data",
+                "Source": "/var/lib/docker/volumes/qm1data/_data",
+                "Destination": "/mnt/mqm",
+                "Driver": "local",
+                "Mode": "z",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "0dd51cb324a8",
+            "Domainname": "",
+            "User": "1001",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "1414/tcp": {},
+                "9157/tcp": {},
+                "9415/tcp": {},
+                "9443/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "MQ_QMGR_NAME=QM1",
+                "MQ_APP_PASSWORD=passw0rd",
+                "MQ_ADMIN_PASSWORD=passw0rd",
+                "LICENSE=accept",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/mqm/bin",
+                "container=oci",
+                "MQ_OVERRIDE_DATA_PATH=/mnt/mqm/data",
+                "MQ_OVERRIDE_INSTALLATION_NAME=Installation1",
+                "MQ_USER_NAME=mqm",
+                "MQ_GRACE_PERIOD=30",
+                "LANG=en_US.UTF-8",
+                "AMQ_DIAGNOSTIC_MSG_SEVERITY=1",
+                "AMQ_ADDITIONAL_JSON_LOG=1",
+                "MQ_LOGGING_CONSOLE_EXCLUDE_ID=AMQ5041I,AMQ5052I,AMQ5051I,AMQ5037I,AMQ5975I",
+                "WLP_LOGGING_MESSAGE_FORMAT=json",
+                "MQ_CONNAUTH_USE_HTP=true",
+                "MQ_DEV=true",
+                "MQ_ENABLE_EMBEDDED_WEB_SERVER=1",
+                "MQ_GENERATE_CERTIFICATE_HOSTNAME=localhost",
+                "LD_LIBRARY_PATH=/opt/mqm/lib64",
+                "MQS_PERMIT_UNKNOWN_ID=true"
+            ],
+            "Cmd": null,
+            "Image": "icr.io/ibm-messaging/mq:latest",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": [
+                "runmqdevserver"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "architecture": "amd64",
+                "authoritative-source-url": "https://www.ibm.com/software/passportadvantage/",
+                "base-image": "registry.access.redhat.com/ubi9/ubi-minimal",
+                "base-image-release": "9.4-949.1716471857",
+                "build-date": "2024-06-07T05:33:54+0000",
+                "com.redhat.component": "ubi9-minimal-container",
+                "com.redhat.license_terms": "https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI",
+                "description": "Simplify, accelerate and facilitate the reliable exchange of data with a security-rich messaging solution — trusted by the world’s most successful enterprises",
+                "distribution-scope": "private",
+                "io.buildah.version": "1.29.0",
+                "io.k8s.description": "Simplify, accelerate and facilitate the reliable exchange of data with a security-rich messaging solution — trusted by the world’s most successful enterprises",
+                "io.k8s.display-name": "IBM MQ Advanced for Developers Server",
+                "io.openshift.expose-services": "",
+                "io.openshift.tags": "mq messaging",
+                "maintainer": "IBM",
+                "mq-build": "p940-L240605.1",
+                "name": "ibm-mqadvanced-server-dev",
+                "release": "r1",
+                "run": "podman run -d -e LICENSE=accept ibm-mqadvanced-server-dev:9.4.0.0-r1.20240607053012.53e6ab1-amd64",
+                "summary": "IBM MQ Advanced for Developers Server",
+                "url": "https://www.ibm.com/products/mq/advanced",
+                "vcs-ref": "53e6ab1e752148ea549a73db5a48735da7e76b6f",
+                "vcs-type": "git",
+                "vcs-url": "git@github.ibm.com:mq-cloudpak/mq-container",
+                "vendor": "IBM",
+                "version": "9.4.0.0"
+            }
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "a9bc70a5aa41dc7f5dffa54ea14e4c763e709a9ce357a1cb644714ce49b90dc6",
+            "SandboxKey": "/var/run/docker/netns/a9bc70a5aa41",
+            "Ports": {
+                "1414/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "1414"
+                    }
+                ],
+                "9157/tcp": null,
+                "9415/tcp": null,
+                "9443/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "9443"
+                    }
+                ]
+            },
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "738f82bc6c8c55f5d80e71802e3e553664dcb0c4236bcd30b5f6bbb48900479f",
+            "Gateway": "172.17.0.1",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "172.17.0.2",
+            "IPPrefixLen": 16,
+            "IPv6Gateway": "",
+            "MacAddress": "02:42:ac:11:00:02",
+            "Networks": {
+                "bridge": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "MacAddress": "02:42:ac:11:00:02",
+                    "NetworkID": "3841444fc3c19d9b9fb66ede8151b1e45bdd62b73b68cc5d66c0e4e40cc2b12d",
+                    "EndpointID": "738f82bc6c8c55f5d80e71802e3e553664dcb0c4236bcd30b5f6bbb48900479f",
+                    "Gateway": "172.17.0.1",
+                    "IPAddress": "172.17.0.2",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DriverOpts": null,
+                    "DNSNames": null
+                }
+            }
+        }
+    }
+]
+PS D:\>
